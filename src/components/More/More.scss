@@ -1,0 +1,37 @@
+@import "../../index.scss";
+.more-container{
+    a{
+        text-decoration: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: $font-color-primary;
+        font-size: 17px;
+        padding: 10px 15px;
+        transition: 0.4s all;
+        span{
+            margin-right: 3.8em;
+        }
+        &:hover{
+            border-radius: 30px;
+            background-color: $background-grey;
+        }
+        &:hover .menu-icon{
+            transform: scale(1.05);
+        }
+    }
+}
+@media screen and (max-width:1200px){
+    .more-container{
+        a{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px){
+    .more-container{
+        display: none;
+    }
+}

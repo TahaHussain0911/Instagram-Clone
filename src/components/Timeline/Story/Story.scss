@@ -1,0 +1,17 @@
+@import "../../../index.scss";
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    // justify-content: center;
+    // height: 30vh;
+    margin: 15px 8px;
+    span{
+        color: $font-color-primary;
+        font-size: 12px;
+    }
+    .opacity{
+        color: $font-color-secondary !important;
+    }
+}

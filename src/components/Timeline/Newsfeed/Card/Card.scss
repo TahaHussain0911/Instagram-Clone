@@ -1,0 +1,213 @@
+@import "../../../../index.scss";
+.card {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+  margin-left: 10px;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-color-grey;
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1vh;
+    .top-profile {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .border {
+        width: 44px;
+        height: 44px;
+      }
+    }
+    h4 {
+      font-size: 14px;
+      color: $font-color-primary;
+      margin-left: 0.5rem;
+      transition: 0.1s all;
+      cursor: pointer;
+      &:hover {
+        color: $font-color-secondary;
+      }
+    }
+    p {
+      margin-left: 0.4rem;
+      color: $font-color-secondary;
+      font-size: 14px;
+      &::before {
+        content: "\2022";
+        margin-right: 0.3em;
+      }
+    }
+    .three-dots {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .post-box {
+    position: relative;
+    .post {
+      width: 100%;
+      height: 500px;
+      border-radius: 5px;
+      // margin: 0px 10px;
+    }
+
+    .liked {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      height: 130px;
+      visibility: hidden;
+    }
+    .show {
+      visibility: visible !important;
+      animation: scale-up-center 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+        both;
+    }
+  }
+  .button-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2vh;
+    .react-box {
+      display: flex;
+      gap: 1rem;
+      .heart-icon {
+        position: relative;
+        cursor: pointer;
+        i {
+          font-size: 24px;
+          fill: rgb(255, 48, 64);
+        }
+        .fa-solid {
+          position: absolute;
+          left: 0;
+          color: rgb(255, 48, 64);
+          fill: rgb(255, 48, 64);
+        }
+      }
+    }
+    .opacity-btn {
+      transition: 0.2s all;
+    }
+    .opacity-btn:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  .likes-box {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1.5vh;
+    b {
+      color: $font-color-primary;
+      cursor: pointer;
+    }
+  }
+  .caption {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1vh;
+    h4 {
+      font-size: 15px;
+      color: $font-color-primary;
+      cursor: pointer;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .comment-box {
+    margin-top: 1.5vh;
+    color: $font-color-secondary;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .add-comment {
+    margin-top: 1.5vh;
+    width: 100%;
+    .your-comments{
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.3rem;
+      h4 {
+        font-size: 14px;
+        color: $font-color-primary;
+        cursor: pointer;
+        span {
+          padding-left: 5px;
+          font-weight: lighter !important;
+          cursor: text !important;
+    }
+      }
+    }
+    form {
+      width: 100%;
+      margin-top: 1.5vh;
+      display: flex;
+      // align-items: center;
+      textarea {
+        width: 90%;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: $font-color-primary;
+        display: block;
+        resize: none;
+        font-family: $font;
+        &::placeholder {
+          color: $font-color-secondary;
+        }
+      }
+      button {
+        width: 10%;
+        border: none;
+        background-color: white;
+        color: $link-color;
+        cursor: pointer;
+        font-weight: 600;
+        height: 0px;
+        font-size: 15px;
+        &:hover {
+          color: $font-color-primary;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .card{
+    margin-left: 5px;
+    .post-box{
+      .liked{
+        top: 30%;
+        left: 35%;
+      }
+      .post{
+        height: 400px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width:360px) {
+  .card{
+    margin-left: 5px;
+    .post-box{
+      .liked{
+        height: 100px;
+        left: 34%;
+      }
+      .post{
+        height: 335px !important;
+      }
+    }
+  }
+}

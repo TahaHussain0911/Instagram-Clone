@@ -1,0 +1,44 @@
+@import "./index.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:$font;
+    font-weight: 500;
+}
+
+.main-container{
+    margin-top: 7vh;
+    margin-left: 20em;
+    display: flex;
+    gap: 3rem;
+}
+@media screen and (max-width: 1200px){
+    .main-container{
+    margin-left: 13em;
+
+    }
+}
+@media screen and (max-width: 750px){
+    .main-container{
+        margin-left: 0em;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 10vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .main-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 400px){
+    .main-container{
+        width: 95%;
+    }
+}

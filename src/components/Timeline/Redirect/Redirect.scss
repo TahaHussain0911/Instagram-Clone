@@ -1,0 +1,117 @@
+@import "../../../index.scss";
+
+.story-component {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding: 2.1vh 0;
+  position: relative;
+  background-color: $font-color-primary;
+  .story-round {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 95vh;
+    width: 400px;
+  }
+  .logo {
+    margin-left: 20px;
+    background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yw/r/8l7rxE47o3p.png");
+    background-position: 0px 0px;
+    background-size: auto;
+    width: 103px;
+    height: 29px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .show-later{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .cross-icon{
+    margin-right: 20px;
+    cursor: pointer;
+    i{
+        font-size: 35px;
+        color: white;
+    }
+  }
+}
+@media screen and (max-width:1100px) {
+  .story-component{
+    .story-round{
+      height: 90vh;
+      margin-top: 5vh;
+    }
+  }
+}
+@media screen and (max-width:900px) {
+  .story-component{
+    .story-round{
+      height: 90vh;
+      margin-top: 5vh;
+      width: 350px;
+    }
+  }
+}
+@media screen and (max-width:700px) {
+  .story-component{
+    .story-round{
+      height: 82vh;
+      margin-top: 8vh;
+      width: 320px;
+    }
+  }
+}
+@media screen and (max-width:550px) {
+  .story-component{
+    padding: 0px;
+    .story-round{
+      height: 100%;
+      margin-top: 0px;
+      width: fit-content;
+      margin: 0px 30px;
+    }
+    // .show-later{
+    //   display: block !important;
+    // }
+    .hide-later{
+      display: none !important;
+    }
+    .cross-icon{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
+@media screen and (max-width:480px) {
+  .story-component{
+    .story-round{
+      margin: 0px;
+    }
+    .cross-icon{
+      right: 0px;
+    }
+  }
+}
+// @media screen and (max-width:350px){
+//   .story-component{
+//     .story-round{
+//       height: 70vh;
+//       margin-top: 15vh;
+//       width: 230px;
+//     }
+//     .show-later{
+//       margin-left: 3px;
+//     }
+//     .cross-icon{
+//       margin-right: 3px;
+//     }
+//   }
+// }

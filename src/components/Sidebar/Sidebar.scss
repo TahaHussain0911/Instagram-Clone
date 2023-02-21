@@ -1,0 +1,85 @@
+@import "../../index.scss";
+.sidebar-container{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25vw;
+    row-gap: 0.5rem;
+    .profile-sidebar{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .suggestions-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .suggestions{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4{
+                font-size: 15px;
+                color: $font-color-secondary;
+            }
+            button{
+                background-color: $background-white;
+                border: none;
+                color: $font-color-primary;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 13px;
+                transition: 0.2s all;
+                &:hover{
+                    color: $font-color-secondary;
+                }
+            }
+        }
+        .suggest-people{
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.1rem;
+            p{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 14px;
+            }
+        }
+    }
+    .footer{
+        color: $font-color-footer;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 12px;
+        margin-top: 2.5vh;
+        .links{
+            ul{
+                display: flex;
+                gap: 0.6rem;
+                flex-wrap: wrap;
+                list-style: none;
+                li:not(:first-child):not(:nth-child(8))::before{
+                    content: "\2022";
+                    margin-right: 0.5em;
+                    font-size: 6px;
+                }
+                li:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1050px) {
+    .sidebar-container{
+        display: none;
+    }
+}

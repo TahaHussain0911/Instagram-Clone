@@ -1,0 +1,36 @@
+@import "../../index.scss";
+.border{
+    padding: 2px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    // margin: 15px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transform: rotateZ(45deg);
+}
+.profileicon{
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid $background-white;
+    background-color: silver;
+    &.small{
+        height: 25px;
+        width: 25px;
+    }
+    &.medium{
+        height: 40px;
+        width: 40px;
+    }
+    &.large{
+        height: 62px;
+        width: 62px;
+        object-fit: cover;
+        // transform: rotateZ(-45deg);
+    }
+}
+.silver{
+    background: $border-color-grey !important;
+}
