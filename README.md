@@ -1,4 +1,4 @@
-# For fonts and color combinations for Instagram
+## Fonts and color combinations for Instagram
 https://github.com/alekspopovic/instagram-in-react/blob/main/src/styles/_variables.scss 
 
 # Getting Started with Create React App
