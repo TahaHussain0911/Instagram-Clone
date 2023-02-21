@@ -1,3 +1,6 @@
+# For Fonts and color combinations of Instagram visit
+https://github.com/alekspopovic/instagram-in-react/blob/main/src/styles/_variables.scss 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
