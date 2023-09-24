@@ -23,11 +23,9 @@ import shayan from '../Profileimages/shayan.jpg'
 import aqib from '../Profileimages/aqib.jpg'
 import zain from '../Profileimages/zain.jpg'
 import zainpost from '../Profileimages/zainpost.jpg'
-
-
-
-
-
+import blackPhoto from '../Profileimages/blackPhoto.jpg'
+import csgo from '../Profileimages/csgo.jpg'
+import gilgit from '../Profileimages/gilgit.jpg'
 
 const InstaState = (props) => {
   const [name, setname] = useState("");
@@ -42,7 +40,7 @@ const InstaState = (props) => {
       stories: [
         {
           story:
-            "https://tse2.mm.bing.net/th?id=OIP.asbNSgfjZumT0167BcFQWAHaEo&pid=Api&P=0",
+          gilgit,
           posted: "Posted 1h Ago",
         },
         {
@@ -87,7 +85,7 @@ const InstaState = (props) => {
       id: 4,
       name: "afianaeem89",
       image:
-        "https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.6435-9/182786803_2934993793486125_7209103003797421597_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHj2TdiDYt4OpeXKPvS2FcocLutnQymkNhwu62dDKaQ2E8dFGlyWAmkYWLqo2KfQY1FmAtPB64rBb9lAQROLhZy&_nc_ohc=kYGIO_HiYtoAX8P4-BG&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfCdlDTd2jgHkv2BL_VVWrX3lCgd8-K02A3oMJHRofjARw&oe=6415483C",
+        blackPhoto,
       stories: [
         {
           story:
@@ -117,7 +115,7 @@ const InstaState = (props) => {
       stories: [
         {
           story:
-            "https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.6435-9/73524663_2351275411841949_2095051119520404045_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEvrEchKYYh8DkViyVe6QgZ2nZtR3SJPo_adm1HdIk-j8RJ0LWDOfuqIIPYo45KFMXoWkFi3SODdj_MYdVMlysq&_nc_ohc=4l-i4wn51lIAX8cl9KH&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfBAOgyQoKOr8hYdHjCTm9IGKrhkWh8FIxzwovc5MqkDeg&oe=6416BCCA",
+          csgo,
           posted: "Posted 15 Ago",
         },
       ],
@@ -227,7 +225,7 @@ const InstaState = (props) => {
       id: 14,
       name: "rameenmaryam",
       image:
-        "https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.6435-9/182786803_2934993793486125_7209103003797421597_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHj2TdiDYt4OpeXKPvS2FcocLutnQymkNhwu62dDKaQ2E8dFGlyWAmkYWLqo2KfQY1FmAtPB64rBb9lAQROLhZy&_nc_ohc=kYGIO_HiYtoAX8P4-BG&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfCdlDTd2jgHkv2BL_VVWrX3lCgd8-K02A3oMJHRofjARw&oe=6415483C",
+        blackPhoto,
       stories: [
         {
           story:
@@ -250,7 +248,7 @@ const InstaState = (props) => {
       name: "safarazaa",
       follow: "Follows you",
       image:
-        "https://scontent.fkhi16-1.fna.fbcdn.net/v/t1.6435-9/182786803_2934993793486125_7209103003797421597_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeHj2TdiDYt4OpeXKPvS2FcocLutnQymkNhwu62dDKaQ2E8dFGlyWAmkYWLqo2KfQY1FmAtPB64rBb9lAQROLhZy&_nc_ohc=kYGIO_HiYtoAX8P4-BG&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfCdlDTd2jgHkv2BL_VVWrX3lCgd8-K02A3oMJHRofjARw&oe=6415483C",
+        blackPhoto,
     },
     {
       id: 22,
