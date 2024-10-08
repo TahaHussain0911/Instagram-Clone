@@ -13,14 +13,14 @@ import Profile from '../Profile/Profile'
 const Menu = () => {
   return (
     <div className='menu-container'>
-        <a href="#"><Home className='menu-icon'/> <span className='active'> Home</span></a>
-        <a href="#" className='hide-icon'><Search className='menu-icon'/> <span className='search-bar'> Search</span></a>
-        <a href="#"><Explore className='menu-icon'/> <span> Explore</span></a>
-        <a href="#"><Reels className='menu-icon'/> <span> Reels</span></a>
-        <a href="#"><Messages className='menu-icon'/> <span> Messages</span></a>
-        <a href="#" className='hide-icon'><Notify className='menu-icon'/> <span> Notifications</span></a>
-        <a href="#"><Create className='menu-icon'/> <span> Create</span></a>
-        <a href="#"><Profile className="menu-icon" hoverscale={true} image={logo} imageSize="small" border={false} id={0} visited={false}/> <span> Profile</span></a>
+        <a href="/#"><Home className='menu-icon'/> <span className='active'> Home</span></a>
+        <a href="/#" className='hide-icon'><Search className='menu-icon'/> <span className='search-bar'> Search</span></a>
+        <a href="/#"><Explore className='menu-icon'/> <span> Explore</span></a>
+        <a href="/#"><Reels className='menu-icon'/> <span> Reels</span></a>
+        <a href="/#"><Messages className='menu-icon'/> <span> Messages</span></a>
+        <a href="/#" className='hide-icon'><Notify className='menu-icon'/> <span> Notifications</span></a>
+        <a href="/#"><Create className='menu-icon'/> <span> Create</span></a>
+        <a href="/#"><Profile className="menu-icon" hoverscale={true} image={logo} imageSize="small" border={false} id={0} visited={false}/> <span> Profile</span></a>
     </div>
   )
 }
