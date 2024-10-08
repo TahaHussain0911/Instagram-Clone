@@ -1,9 +1,8 @@
-import React, { useState,useContext,useRef } from "react";
-import "./Redirect.scss";
+import React, { useContext, useRef, useState } from "react";
 import Stories from "react-insta-stories";
 import { useNavigate } from "react-router-dom";
 import InstaContext from "../../../context/InstaContext";
-import InstaIcon from "../../../assets/InstaIcon.png";
+import "./Redirect.scss";
 const Redirect = () => {
   const ref = useRef(null)
   const getContext=useContext(InstaContext);

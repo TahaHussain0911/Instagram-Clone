@@ -1,7 +1,7 @@
-import React, { useContext,useState } from "react";
-import "./Profile.scss";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import InstaContext from "../../context/InstaContext";
+import "./Profile.scss";
 const Profile = (props) => {
   const getContext = useContext(InstaContext);
   const { users, setname,setbackground} = getContext;
