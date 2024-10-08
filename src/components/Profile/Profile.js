@@ -13,7 +13,7 @@ const Profile = (props) => {
     // console.log(e.target)
     filterImage = [
       ...users.filter((element) => {
-        return element.id == e.target.id;
+        return element.id === e.target.id;
       }),
     ];
     setname(filterImage[0]);
